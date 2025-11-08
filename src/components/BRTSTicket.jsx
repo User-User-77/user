@@ -62,7 +62,7 @@ const BRTSTicket = ({ onBack }) => {
     const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
     const month = monthNames[today.getMonth()]
     const year = today.getFullYear()
-    setIssuedOn(`${day} ${month} ${year}, 07:00 PM`)
+    setIssuedOn(`${day} ${month} ${year}, 07:03 PM`)
   }, [])
 
   const formatTime = (value) => {
@@ -78,7 +78,7 @@ const BRTSTicket = ({ onBack }) => {
       <div className="max-w-[375px] mx-auto bg-white min-h-screen shadow-lg">
         {/* Header */}
         <header className="bg-white shadow-sm fixed top-0 left-0 right-0 z-10">
-          <div className="max-w-[375px] mx-auto px-4 py-3 flex items-center justify-between">
+          <div className="max-w-[375px] mx-auto px-4 py-5 flex items-center justify-between">
             <div className="flex items-center gap-2">
               <button 
                 onClick={onBack}
@@ -107,11 +107,11 @@ const BRTSTicket = ({ onBack }) => {
         </header>
 
         {/* Content */}
-        <div className="pt-16">
+        <div className="pt-20">
           {/* QR Code Section */}
-          <div className="bg-white px-6 py-8 text-center">
-            <h2 className="text-xl font-semibold text-gray-900 mb-2 px-4 leading-normal">
-              Bopal App... → Gota Vasan...
+          <div className="bg-white px-3 sm:px-6 py-8 text-center">
+            <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-8 px-1 sm:px-4 leading-normal whitespace-nowrap">
+              Bopal App<span className="align-super text-base sm:text-lg">...</span> → Gota Vasan<span className="align-super text-base sm:text-lg">...</span>
             </h2>
             <p className="text-sm text-gray-600 mb-6">
               Scan this QR at Entry & Exit Points

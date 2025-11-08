@@ -6,10 +6,10 @@ const QRCodeSection = () => {
   const qrData = "q5FxS0xxoJSyaOiRNPW4dFanF0z0DrBb+qgsrock6jyvw5bbA3mSFNg7yYq7AhlbwYrbR3W0l6nWDFO1JYxDp1TVdnOnO3Hp"
 
   return (
-    <div className="bg-white px-6 py-8 text-center">
+    <div className="bg-white px-3 sm:px-6 py-8 text-center">
       {/* Route Text */}
-      <h2 className="text-xl font-semibold text-gray-900 mb-7 px-4 leading-normal">
-        Bopal App... → Gota Vasan...
+      <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-10 px-1 sm:px-4 leading-normal whitespace-nowrap">
+        Bopal App<span className="align-super text-base sm:text-lg">...</span> → Gota Vasan<span className="align-super text-base sm:text-lg">...</span>
       </h2>
       
       {/* Subtitle */}

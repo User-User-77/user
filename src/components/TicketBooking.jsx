@@ -56,7 +56,7 @@ const TicketBooking = ({ onViewTicket }) => {
   }
 
   return (
-    <div className="min-h-screen" style={{ backgroundColor: '#00BAF2' }}>
+    <div className="min-h-screen" style={{ backgroundColor: '#FFFFFF' }}>
       <div className="max-w-[375px] mx-auto bg-white min-h-screen">
         {/* Header */}
         <header className="bg-white fixed top-0 left-0 right-0 z-10" style={{ boxShadow: '0 1px 3px rgba(0,0,0,0.1)' }}>
@@ -94,7 +94,7 @@ const TicketBooking = ({ onViewTicket }) => {
                 </div>
               </div>
               <h2 className="text-xl font-bold mb-2 whitespace-nowrap" style={{ color: '#1F2937', lineHeight: '1.3' }}>
-                Bopal Appr... → Gota Vasa...
+                Bopal Appr<span className="align-super text-base">...</span> → Gota Vasa<span className="align-super text-base">...</span>
               </h2>
               <p className="text-sm mb-1" style={{ color: '#6B7280' }}>AC</p>
               <p className="text-sm" style={{ color: '#4B5563' }}>1 Adult Ticket</p>
