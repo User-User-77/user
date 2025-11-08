@@ -1,0 +1,43 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Circular background -->
+  <circle cx="12" cy="12" r="12" fill="#E3F2FD"/>
+  
+  <!-- Ticket shape -->
+  <g transform="translate(4, 4)">
+    <!-- Ticket body -->
+    <rect x="0" y="2" width="12" height="12" rx="2" fill="#2196F3" stroke="#1976D2" stroke-width="0.5"/>
+    
+    <!-- QR Code pattern in blue section -->
+    <g fill="white" opacity="0.9">
+      <!-- Top left corner squares -->
+      <rect x="1.5" y="3.5" width="2" height="2"/>
+      <rect x="4.5" y="3.5" width="1" height="1"/>
+      <rect x="6.5" y="3.5" width="1" height="1"/>
+      <rect x="8.5" y="3.5" width="1" height="1"/>
+      
+      <!-- Middle pattern -->
+      <rect x="1.5" y="6.5" width="1" height="1"/>
+      <rect x="3.5" y="6.5" width="1" height="1"/>
+      <rect x="5.5" y="6.5" width="1" height="1"/>
+      <rect x="7.5" y="6.5" width="1" height="1"/>
+      <rect x="9.5" y="6.5" width="1" height="1"/>
+      
+      <!-- Bottom pattern -->
+      <rect x="1.5" y="9.5" width="1" height="1"/>
+      <rect x="3.5" y="9.5" width="2" height="2"/>
+      <rect x="6.5" y="9.5" width="1" height="1"/>
+      <rect x="8.5" y="9.5" width="1" height="1"/>
+      <rect x="10.5" y="9.5" width="1" height="1"/>
+    </g>
+    
+    <!-- Perforated edge (wavy line) -->
+    <path d="M 12 4 Q 12.5 5, 12 6 Q 11.5 7, 12 8 Q 12.5 9, 12 10 Q 11.5 11, 12 12" 
+          stroke="#1976D2" stroke-width="0.5" fill="none"/>
+    
+    <!-- White stub section -->
+    <rect x="12" y="2" width="4" height="12" rx="0" fill="white" stroke="#1976D2" stroke-width="0.5"/>
+  </g>
+</svg>
+
+
+
