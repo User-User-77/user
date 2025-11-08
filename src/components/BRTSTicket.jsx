@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { QRCodeSVG } from 'qrcode.react'
 import ticketIcon from '../assets/ticket-icon.svg'
 
-const BRTSTicket = () => {
+const BRTSTicket = ({ onBack }) => {
   // Timer state
   const [timeRemaining, setTimeRemaining] = useState(null)
   const [status, setStatus] = useState('loading')
@@ -80,7 +80,10 @@ const BRTSTicket = () => {
         <header className="bg-white shadow-sm fixed top-0 left-0 right-0 z-10">
           <div className="max-w-[375px] mx-auto px-4 py-3 flex items-center justify-between">
             <div className="flex items-center gap-2">
-              <button className="flex items-center justify-center w-8 h-8">
+              <button 
+                onClick={onBack}
+                className="flex items-center justify-center w-8 h-8"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-6 w-6 text-gray-700"
@@ -116,10 +119,10 @@ const BRTSTicket = () => {
             <div className="flex justify-center mb-2">
               <QRCodeSVG
                 value={qrData}
-                size={200}
+                size={300}
                 level="M"
                 includeMargin={false}
-                style={{ width: '200px', height: '200px' }}
+                style={{ width: '300px', height: '300px' }}
               />
             </div>
           </div>

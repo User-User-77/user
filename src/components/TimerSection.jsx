@@ -10,10 +10,10 @@ const TimerSection = () => {
       
       // Set 7 PM and 10 PM for today in local time
       const sevenPM = new Date(now)
-      sevenPM.setHours(12, 0, 0, 0) // 7 PM today
+      sevenPM.setHours(19, 0, 0, 0) // 7 PM today
 
       const tenPM = new Date(now)
-      tenPM.setHours(15, 0, 0, 0) // 10 PM today
+      tenPM.setHours(22, 0, 0, 0) // 10 PM today
 
       if (now < sevenPM) {
         // Before 7 PM today - ticket not active yet

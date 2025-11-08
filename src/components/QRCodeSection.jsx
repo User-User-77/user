@@ -21,10 +21,10 @@ const QRCodeSection = () => {
       <div className="flex justify-center mb-0">
         <QRCodeSVG
           value={qrData}
-          size={200}
+          size={300}
           level="M"
           includeMargin={false}
-          style={{ width: '250px', height: '250px' }}
+          style={{ width: '390px', height: '390px' }}
         />
       </div>
     </div>

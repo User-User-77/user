@@ -21,7 +21,7 @@ const TicketDetails = () => {
     const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
     const month = monthNames[today.getMonth()]
     const year = today.getFullYear()
-    setIssuedOn(`${day} ${month} ${year}, 07:00 PM`)
+    setIssuedOn(`${day} ${month} ${year}, 07:03 PM`)
   }, [])
 
   const toggleExpand = () => {
