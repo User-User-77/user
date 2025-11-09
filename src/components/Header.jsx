@@ -4,7 +4,7 @@ import ticketIcon from '../assets/ticket-icon.svg'
 const Header = () => {
   return (
     <header className="bg-white shadow-sm fixed top-0 left-0 right-0 z-10">
-      <div className="max-w-[375px] mx-auto px-4 py-3 flex items-center justify-between">
+      <div className="max-w-[375px] mx-auto py-3 flex items-center justify-between">
         {/* Left Arrow, Icon and Title */}
         <div className="flex items-center gap-2">
           <button className="flex items-center justify-center w-8 h-8">

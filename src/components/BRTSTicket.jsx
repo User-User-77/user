@@ -78,7 +78,7 @@ const BRTSTicket = ({ onBack }) => {
       <div className="max-w-[375px] mx-auto bg-white min-h-screen shadow-lg">
         {/* Header */}
         <header className="bg-white shadow-sm fixed top-0 left-0 right-0 z-10">
-          <div className="max-w-[375px] mx-auto px-4 py-5 flex items-center justify-between">
+          <div className="max-w-[375px] mx-auto py-5 flex items-center justify-between">
             <div className="flex items-center gap-2">
               <button 
                 onClick={onBack}
@@ -109,8 +109,8 @@ const BRTSTicket = ({ onBack }) => {
         {/* Content */}
         <div className="pt-20">
           {/* QR Code Section */}
-          <div className="bg-white px-3 sm:px-6 py-8 text-center">
-            <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-8 px-1 sm:px-4 leading-normal whitespace-nowrap">
+          <div className="bg-white py-8 text-center">
+            <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-8 leading-normal whitespace-nowrap">
               Bopal App<span className="align-super text-base sm:text-lg">...</span> → Gota Vasan<span className="align-super text-base sm:text-lg">...</span>
             </h2>
             <p className="text-sm text-gray-600 mb-6">
@@ -128,7 +128,7 @@ const BRTSTicket = ({ onBack }) => {
           </div>
 
           {/* Timer Section */}
-          <div className="bg-white px-6 pt-2 pb-6 text-center">
+          <div className="bg-white pt-2 pb-6 text-center">
             <p className="text-sm text-gray-600 mb-4">Your ticket is valid for</p>
 
             {status === 'not-active' && (
@@ -171,7 +171,7 @@ const BRTSTicket = ({ onBack }) => {
           <div className="bg-white mx-4 mb-4 rounded-lg shadow-sm border border-gray-200 overflow-hidden">
             <button
               onClick={toggleExpand}
-              className="w-full px-4 py-4 flex items-center justify-between hover:bg-gray-50 transition-colors"
+              className="w-full py-4 flex items-center justify-between hover:bg-gray-50 transition-colors"
             >
               <h3 className="text-base font-semibold text-gray-900">Ticket Details</h3>
               <svg
@@ -193,7 +193,7 @@ const BRTSTicket = ({ onBack }) => {
                 isExpanded ? 'max-h-96' : 'max-h-0'
               }`}
             >
-              <div className="px-4 pb-4 space-y-2.5">
+              <div className="pb-4 space-y-2.5">
                 <div className="pt-3 pb-2.5 border-b border-gray-200">
                   <div className="flex justify-between items-start">
                     <span className="text-sm text-gray-600">Issued On</span>

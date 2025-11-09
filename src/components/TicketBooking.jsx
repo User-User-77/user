@@ -60,7 +60,7 @@ const TicketBooking = ({ onViewTicket }) => {
       <div className="max-w-[375px] mx-auto bg-white min-h-screen">
         {/* Header */}
         <header className="bg-white fixed top-0 left-0 right-0 z-10" style={{ boxShadow: '0 1px 3px rgba(0,0,0,0.1)' }}>
-          <div className="max-w-[375px] mx-auto px-4 py-3 flex items-center justify-between">
+          <div className="max-w-[375px] mx-auto py-3 flex items-center justify-between">
             <button className="flex items-center justify-center w-8 h-8">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -82,7 +82,7 @@ const TicketBooking = ({ onViewTicket }) => {
         </header>
 
         {/* Main Content */}
-        <div className="pt-16 px-4 pb-6">
+        <div className="pt-16 pb-6">
           {/* Ticket Card */}
           <div className="bg-white rounded-3xl shadow-lg p-6 mt-6" style={{ boxShadow: '0 4px 6px rgba(0,0,0,0.1)' }}>
             {/* Route Info */}
@@ -216,7 +216,7 @@ const TicketBooking = ({ onViewTicket }) => {
             <div className="bg-white rounded-2xl overflow-hidden mb-4" style={{ border: '1px solid #E5E7EB' }}>
               <button
                 onClick={() => setIsTripDetailsExpanded(!isTripDetailsExpanded)}
-                className="w-full px-5 py-4 flex items-center justify-between hover:bg-gray-50 transition-colors"
+                className="w-full py-4 flex items-center justify-between hover:bg-gray-50 transition-colors"
               >
                 <h3 className="text-base font-semibold" style={{ color: '#1F2937' }}>Trip Details</h3>
                 <svg
@@ -239,7 +239,7 @@ const TicketBooking = ({ onViewTicket }) => {
                   isTripDetailsExpanded ? 'max-h-96' : 'max-h-0'
                 }`}
               >
-                <div className="px-5 pb-4 space-y-4">
+                <div className="pb-4 space-y-4">
                   <div>
                     <p className="text-xs mb-1" style={{ color: '#6B7280' }}>OPERATOR</p>
                     <p className="text-sm font-medium" style={{ color: '#1F2937' }}>BRTS</p>

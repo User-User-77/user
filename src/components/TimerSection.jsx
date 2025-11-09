@@ -48,7 +48,7 @@ const TimerSection = () => {
   }
 
   return (
-    <div className="bg-white px-6 pt-2 pb-6 text-center">
+    <div className="bg-white pt-2 pb-6 text-center">
       <p className="text-sm text-gray-600 mb-4">Your ticket is valid for</p>
 
       {status === 'not-active' && (

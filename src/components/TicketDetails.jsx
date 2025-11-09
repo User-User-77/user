@@ -33,7 +33,7 @@ const TicketDetails = () => {
       {/* Header */}
       <button
         onClick={toggleExpand}
-        className="w-full px-4 py-4 flex items-center justify-between hover:bg-gray-50 transition-colors"
+        className="w-full py-4 flex items-center justify-between hover:bg-gray-50 transition-colors"
       >
         <h3 className="text-base font-semibold text-gray-900">Ticket Details</h3>
         <svg
@@ -56,7 +56,7 @@ const TicketDetails = () => {
           isExpanded ? 'max-h-96' : 'max-h-0'
         }`}
       >
-        <div className="px-4 pb-4 space-y-2.5">
+        <div className="pb-4 space-y-2.5">
           <div className="pt-3 pb-2.5 border-b border-gray-200">
             <div className="flex justify-between items-start">
               <span className="text-sm text-gray-600">Issued On</span>
