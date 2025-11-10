@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
-import { QRCodeSVG } from 'qrcode.react'
 import ticketIcon from '../assets/ticket-icon.svg'
+import QRCodeSection from './QRCodeSection'
 
 const BRTSTicket = ({ onBack }) => {
   // Timer state
@@ -12,9 +12,6 @@ const BRTSTicket = ({ onBack }) => {
   const [orderId, setOrderId] = useState('')
   const [orderItemId, setOrderItemId] = useState('')
   const [issuedOn, setIssuedOn] = useState('')
-
-  // QR code data
-  const qrData = "BRTS-TICKET-123456789"
 
   // Timer effect
   useEffect(() => {
@@ -109,23 +106,7 @@ const BRTSTicket = ({ onBack }) => {
         {/* Content */}
         <div className="pt-20">
           {/* QR Code Section */}
-          <div className="bg-white py-8 text-center">
-            <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-8 leading-normal whitespace-nowrap">
-              Bopal App<span className="align-super text-base sm:text-lg">...</span> → Gota Vasan<span className="align-super text-base sm:text-lg">...</span>
-            </h2>
-            <p className="text-sm text-gray-600 mb-6">
-              Scan this QR at Entry & Exit Points
-            </p>
-            <div className="flex justify-center mb-2">
-              <QRCodeSVG
-                value={qrData}
-                size={300}
-                level="M"
-                includeMargin={false}
-                style={{ width: '300px', height: '300px' }}
-              />
-            </div>
-          </div>
+          <QRCodeSection />
 
           {/* Timer Section */}
           <div className="bg-white pt-2 pb-6 text-center">
@@ -168,7 +149,7 @@ const BRTSTicket = ({ onBack }) => {
           </div>
 
           {/* Ticket Details */}
-          <div className="bg-white mx-4 mb-4 rounded-lg shadow-sm border border-gray-200 overflow-hidden">
+          <div className="bg-white mx-4 mb-4 rounded-lg shadow-sm border border-gray-200 overflow-hidden px-4 py-3">
             <button
               onClick={toggleExpand}
               className="w-full py-4 flex items-center justify-between hover:bg-gray-50 transition-colors"

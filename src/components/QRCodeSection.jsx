@@ -1,5 +1,6 @@
 import React from 'react'
 import { QRCodeSVG } from 'qrcode.react'
+import { GoArrowRight } from "react-icons/go";
 
 const QRCodeSection = () => {
   const qrData =
@@ -7,10 +8,11 @@ const QRCodeSection = () => {
 
   return (
     <div className="bg-white py-8 text-center">
-  <h2 className="w-full text-[2.4rem] sm:text-[2.8rem] font-extrabold text-gray-900 mb-10 leading-tight flex justify-between items-center whitespace-nowrap">
-  <span>Bopal App<span className="align-super text-lg sm:text-xl">...</span></span>
-  <span className="mx-6 text-[2.8rem] sm:text-[3rem]">→</span>
-  <span>Gota Vasan<span className="align-super text-lg sm:text-xl">...</span></span>
+  <h2 className="w-full text-[1.55rem] sm:text-[2.8rem] font-extrabold text-gray-900 mb-10 leading-tight flex justify-between items-center whitespace-nowrap">
+  <span>Bopal App<span className="align-super text-[1.7rem] sm:text-[1.8rem] font-extrabold">...</span>
+</span>
+  <span className="mx-0.5 text-[1.8rem] sm:text-[3rem]"><GoArrowRight /></span>
+  <span>Gota Vasan<span className="align-super text-[1.7rem] sm:text-[1.8rem] font-extrabold">...</span></span>
 </h2>
 
 
@@ -24,7 +26,7 @@ const QRCodeSection = () => {
       size={300}
       level="M"
       includeMargin={false}
-      style={{ width: '390px', height: '390px' }}
+      style={{ width: '290px', height: '290px' }}
     />
   </div>
 </div>
